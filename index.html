@@ -778,6 +778,10 @@
         max-height: 350px;
       }
 
+      .bento-card[style*="grid-column"] {
+        grid-column: auto !important;
+      }
+
       .nav-links {
         display: none;
       }
@@ -825,7 +829,12 @@
 
       .bento-card--showcase {
         grid-column: span 1;
-        max-height: 300px;
+        grid-row: span 1;
+        max-height: 280px;
+      }
+
+      .bento-card[style*="grid-column"] {
+        grid-column: 1 !important;
       }
 
       .gallery-grid {
